@@ -10,4 +10,5 @@ public abstract class Figures {
     private double area;
 
 
+
 }

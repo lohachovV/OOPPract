@@ -8,15 +8,22 @@ public class Circle extends Figures {
 
     private double radius;
 
-    public Circle (double radius){
+    public Circle (String type, String color, double radius){
+        setType(type);
+        setColor(color);
         this.radius = radius;
+        circleArea();
     }
 
     public void circleArea (){
-        setArea(Math.pow(radius, 2) * Math.PI);
+        setArea((Math.pow(radius, 2) * Math.PI));
     }
 
-
+    @Override
+    public String toString () {
+        return "type: " + getType() + ", color: " + getColor() + ", area of " + getType() + ": " + getArea() +
+                ", radius: " + radius;
+    }
 
 
 }

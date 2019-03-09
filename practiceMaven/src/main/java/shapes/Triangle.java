@@ -9,7 +9,9 @@ public class Triangle extends Figures{
     private double lengthB;
     private double hypotenuse;
 
-    public Triangle (double lengthA, double lengthB){
+    public Triangle (String type, String color, double lengthA, double lengthB){
+        setType(type);
+        setColor(color);
         this.lengthA = lengthA;
         this.lengthB = lengthB;
         triangleArea();
@@ -23,6 +25,12 @@ public class Triangle extends Figures{
 
     private void triangleHypotenuse (){
         this.hypotenuse = Math.sqrt((lengthA * lengthA) + (lengthB * lengthB));
+    }
+
+    @Override
+    public String toString () {
+        return "type: " + getType() + ", color: " + getColor() + ", area of " + getType() + ": " + getArea() +
+                ", length of first side:  " + lengthA + ", length of second side:  " + lengthB + ", hipotenuse: " + hypotenuse;
     }
 
 }
