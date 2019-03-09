@@ -22,7 +22,7 @@ public class Square extends Figures{
     @Override
     public String toString () {
         return "type: " + getType() + ", color: " + getColor() + ", area of " + getType() + ": " + getArea() +
-                "length o side: " + sideLength;
+                ", length o side: " + sideLength;
     }
 
 }
