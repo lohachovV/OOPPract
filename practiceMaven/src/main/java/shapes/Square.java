@@ -16,13 +16,13 @@ public class Square extends Figures{
     }
 
     private void squareArea (){
-        setArea(sideLength * sideLength);
+        setArea(round(sideLength * sideLength));
     }
 
     @Override
     public String toString () {
         return "type: " + getType() + ", color: " + getColor() + ", area of " + getType() + ": " + getArea() +
-                ", length o side: " + sideLength;
+                ", length of side: " + sideLength;
     }
 
 }

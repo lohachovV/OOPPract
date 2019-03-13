@@ -2,6 +2,8 @@ package shapes;
 
 import lombok.Data;
 
+import java.text.DecimalFormat;
+
 
 @Data
 public abstract class Figures {
@@ -10,5 +12,10 @@ public abstract class Figures {
     private double area;
 
 
+    public double round (double forRound){
+        DecimalFormat dF = new DecimalFormat("#.##");
+        forRound = Double.valueOf(dF.format(forRound));
+        return forRound;
+    }
 
 }

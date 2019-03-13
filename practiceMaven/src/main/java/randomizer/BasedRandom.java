@@ -23,7 +23,7 @@ public class BasedRandom {
     private static String randoms() {
         SecureRandom random = new SecureRandom();
         String type = "";
-            int a = random.nextInt(3);
+            int a = random.nextInt(4);
             switch (a) {
                 case 0:
                     type = "square";

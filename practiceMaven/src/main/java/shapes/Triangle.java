@@ -20,17 +20,18 @@ public class Triangle extends Figures{
     }
 
     private void triangleArea() {
-        setArea(((lengthA * lengthB) / 2));
+        setArea(round((lengthA * lengthB) / 2));
     }
 
     private void triangleHypotenuse (){
-        this.hypotenuse = Math.sqrt((lengthA * lengthA) + (lengthB * lengthB));
+        this.hypotenuse =round(Math.sqrt((lengthA * lengthA) + (lengthB * lengthB)));
+
     }
 
     @Override
     public String toString () {
         return "type: " + getType() + ", color: " + getColor() + ", area of " + getType() + ": " + getArea() +
-                ", length of first side:  " + lengthA + ", length of second side:  " + lengthB + ", hipotenuse: " + hypotenuse;
+                ", length of first side:  " + lengthA + ", length of second side:  " + lengthB + ", hypotenuse: " + hypotenuse;
     }
 
 }

@@ -16,7 +16,7 @@ public class Circle extends Figures {
     }
 
     public void circleArea (){
-        setArea((Math.pow(radius, 2) * Math.PI));
+        setArea(round(Math.pow(radius, 2) * Math.PI));
     }
 
     @Override

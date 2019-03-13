@@ -21,13 +21,13 @@ public class Trapezoid extends Figures{
 
 
     public void trapezoidArea(){
-        setArea(((lengthA + lengthB) * height) / 2);
+        setArea(round(((lengthA + lengthB) * height) / 2));
     }
 
     @Override
     public String toString () {
         return "type: " + getType() + ", color: " + getColor() + ", area of " + getType() + ": " + getArea() +
-                ", length of down side:  " + lengthA + ", length of upper side:  " + lengthB + ", heigh: : " + height;
+                ", length of down side:  " + lengthA + ", length of upper side:  " + lengthB + ", heigh: " + height;
     }
 
 }
